@@ -1,21 +1,16 @@
+/* Reset */
+
+html { 
+    box-sizing: border-box; 
+  }
+  *, *:before, *:after { 
+    box-sizing: inherit;
+  }
+  
 /* Universal Styles */
 
 html {
-    font-size: 18px;
-    background-color: white;
-}
-
-@media only screen and (max-width:1024px){
-    body {
-        font-size: 16px;
-    }
-    .mobile-nav {
-        display: block;
-        text-align: center;
-    }
-    nav ul {
-        display: none;
-    }
+    font-size: 18px; 
 }
 
 body {
@@ -23,12 +18,13 @@ body {
     line-height: 1.4em;
 }
 
+@media only screen and (max-width:1024px){
+    body {
+        font-size: 16px;
+    }
+
 h1, h4 {
     font-weight: bold;
-}
-
-li {
-    display: list-item;
 }
 
 .container {
@@ -58,7 +54,7 @@ li {
 /* Main Banner */
 
 .main-banner {
-    background-image:url("../images/moto.jpeg");
+    background:url("../images/moto.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -78,8 +74,16 @@ li {
 .headline h1 {
     font-size: 2rem;
     margin: 0.50rem 0;
-    line-height: 2.2rem;
+    line-height: 1.2;
 }
+
+@media only screen and (max-width: 470px) {
+    .main-banner {
+        height: 15rem;
+    }
+}
+    
+
 
 /* Navigation Bar */
 
@@ -97,11 +101,19 @@ nav ul {
     list-style: none;
 }
 
-
-
-
+@media only screen and (max-width:1024px){
+    .mobile-nav {
+        display: block;
+        text-align: center;
+        
+    }
+    nav ul {
+        display: none;
+    }
+}
 
 /* Products and Business info */
+
 
 .products, .business-info {
     display: flex;
@@ -142,6 +154,7 @@ nav ul {
 }
 
 /* Footer */
+
 
 footer {
     background-color: black;
