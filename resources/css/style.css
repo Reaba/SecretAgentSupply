@@ -1,0 +1,82 @@
+/* Universal Styles */
+
+html {
+    font-size: 18px;
+    background-color: white;
+}
+
+@media only screen and (max-width:1024px){
+    body {
+        font-size: 16px;
+    }
+    .mobile-nav {
+        display: block;
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+    }
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4em;
+
+}
+
+h1, h4 {
+    font-weight: bold;
+}
+
+nav {
+    background-color: firebrick;
+    color: white;
+    
+}
+
+nav ul {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 0;
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Company Header */
+
+.company .container {
+    display: flex;
+    align-items: center;
+    padding: 0.66rem 0;
+}
+
+.company {
+    background-color: black;
+    color: white;
+}
+
+.company img {
+    height: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Main Banner */
+
+.main-banner {
+    background: url("resources/images/moto.jpeg");
+    background-image: url("resources/images/moto.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+}
